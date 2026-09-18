@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="styles/portfolio.css" />
+		<script src="portfolio.js" defer></script>
+	</head>
+	<body>
+		<header id="home">
+			<nav>
+				<h1 class="logo">My Portfolio</h1>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="hero">
+				<img
+					src="img/ProfilePicture.jpg"
+					alt="Profile Photo"
+					class="hero-img" />
+				<div class="hero-text">
+					<h2>
+						Hi, I am <span class="developer-name">Sebastian Stoyanov</span>
+					</h2>
+					<p>Front-End Developer crafting modern, responsive web experience.</p>
+				</div>
+			</div>
+		</header>
+		<section id="about" class="section">
+			<h2>About me</h2>
+			<p>
+				I am a Computing student developing practical experience in front-end
+				development, JavaScript, Python and SQL through hands-on projects.
+			</p>
+		</section>
+		<section class="section projects-section" id="projects">
+			<h2>My Projects</h2>
+			<p class="projects-introduction">
+				Explore some of the projects I have built while developing my Web
+				development skills.
+			</p>
+			<div class="project-carousel" id="projectCarousel">
+				<div class="project-carousel-track" id="projectCarouselTrack"></div>
+				<div class="carousel-controls">
+					<button
+						type="button"
+						class="carousel-button"
+						id="previousProjectButton"
+						aria-label="Previous project">
+						&#10094;
+					</button>
+					<div class="carousel-dots" id="projectCarouselDots"></div>
+					<button
+						type="button"
+						class="carousel-button"
+						id="nextProjectButton"
+						aria-label="Next project">
+						&#10095;
+					</button>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="section">
+			<h2>Contact Me:</h2>
+			<form id="contact-form">
+				<label for="name">Name:</label>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Your name"
+					required />
+				<label for="email">Email:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Your email"
+					required />
+				<label for="message">Message:</label>
+				<textarea
+					name="message"
+					id="message"
+					placeholder="Write your message"
+					required></textarea>
+				<p id="form-msg"></p>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+		<button id="topBtn" title="Go to top">Go to top</button>
+		<footer>
+			<p>&copy; 2026 Sebastian Stoyanov</p>
+		</footer>
+		<dialog
+			id="projectDialog"
+			class="project-dialog"
+			aria-labelledby="dialogProjectTitle">
+			<div class="project-dialog-content">
+				<button
+					type="button"
+					class="dialog-close-button"
+					id="dialogCloseButton"
+					aria-label="Close project details">
+					&times;
+				</button>
+
+				<img
+					src=""
+					alt=""
+					id="dialogProjectImage"
+					class="dialog-project-image" />
+
+				<h2 id="dialogProjectTitle"></h2>
+				<p id="dialogProjectDescription" class="dialog-project-description"></p>
+
+				<h3>Technologies</h3>
+				<div
+					id="dialogProjectTechnologies"
+					class="dialog-project-technologies"></div>
+
+				<div class="dialog-project-links" id="dialogProjectLinks"></div>
+			</div>
+		</dialog>
+	</body>
+</html>
