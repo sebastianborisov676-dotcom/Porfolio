@@ -71,7 +71,7 @@ const projects = [{
 
     image: "img/LoginPage.png",
 
-    liveURL: "",
+    liveURL: "https://sebastianborisov676-dotcom.github.io/login-page/",
 
     githubURL: "https://github.com/sebastianborisov676-dotcom/login-page"
 },
