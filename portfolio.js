@@ -54,7 +54,7 @@ const projects = [{
 
     image: "img/WeatherApp.png",
 
-    liveURL: "",
+    liveURL: "https://sebastianborisov676-dotcom.github.io/Weather-app/",
 
     githubURL: "https://github.com/sebastianborisov676-dotcom/Weather-app"
 },
@@ -92,9 +92,9 @@ const projects = [{
         "JavaScript"
     ],
 
-    image: "img/IntercativeCards.png",
+    image: "img/InteractiveCards.png",
 
-    liveURL: "",
+    liveURL: "https://sebastianborisov676-dotcom.github.io/Interactive-Carousel-Cards/",
 
     githubURL: "https://github.com/sebastianborisov676-dotcom/Interactive-Carousel-Cards"
     
